@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+<title>Encriptador y Desencriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/logo.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="mensajeEntrada" cols="30" rows="10" placeholder="Ingrese su mensaje aqui"></textarea>
+            </textarea>
+                <div>
+                    <h6 class="informacion">
+                        Solo letras minusculas y sin acentos
+                    </h6>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick = "btnEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+                </div>
+        </section>
+        <section>
+            <textarea class="mensajeSalida" cols="30" rows="10"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
